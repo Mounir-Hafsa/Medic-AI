@@ -94,7 +94,7 @@ If you prefer environment variables, you can set them in your shell or a `.env` 
 ### 2. ChromaDB
 
 The application references a **PersistentClient** for ChromaDB, which will create or use a local SQLite database file (e.g., `database` directory) to store embeddings. Make sure you have the necessary permissions to read/write to this location.
-
+Make sure to download the database contents (Embeddings) from https://mega.nz/folder/zc1RWCob#npNOT19ZE5g7S7ROKuXcbQ
 If you run into issues, confirm that the path you specified in:
 ```python
 chroma_client = chromadb.PersistentClient(path="database")
